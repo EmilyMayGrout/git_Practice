@@ -3,7 +3,7 @@ import pandas as pd
 
 def get_kinematics(x, y):
 	dx = x - x.shift()
-	dy = z - y.shift()
+	dy = y - y.shift()
 	d2x = dx - dx.shift()
 	d2y = dy - dy.shift()
 
